@@ -1,0 +1,26 @@
+# Print Fibonnaci sequence till the user provided digit
+
+n = int(input("Enter till what fibonnaci number you want to print : "))
+
+x=0
+z=y=1
+
+if n==0:
+    exit
+
+if n==1:
+    print (x)
+    
+if n==2:
+    print (x)
+    print (y)
+    
+if n>2:
+    print (x)
+    print (y)
+    while n-2 > 0:
+        x=y
+        y=z
+        z=x+y
+        print (z)
+        n-=1
