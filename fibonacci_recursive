@@ -1,0 +1,12 @@
+# Print fibonnaci sequence recursively till length l
+
+def fib_recursive(l):
+    if l<=1:
+        return l
+    else:
+        return (fib_recursive(l-1) + fib_recursive(l-2))
+    
+l = int(input("Enter no. of fibonnaci numbers needed : "))
+
+for iter in range(l):
+    print (fib_recursive(iter))
